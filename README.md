@@ -1,9 +1,9 @@
-# // Ping Pong
+# Ping Pong
 
 #### Ping Pong Number Generator | Epicodus | 08.19.16
 ###### _By **Cornelius Range**_
 
-## **//** Description
+## Description
 
 ##a web application that takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:
 
@@ -21,13 +21,13 @@
 
 _Or_, using your web browser, navigate to the gh-page: https://
 
-## **//** Support and contact details
+## Support and contact details
 
 Contact Cornelius Range crangev5@gmail.com, for more information.
 
-## **//** Technologies Used
+##Technologies Used
 
-## **//** Program Specs
+## Program Specs
 
 * _For an input of 1, program returns 1._
   * _Input Example: 1_
