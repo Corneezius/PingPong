@@ -5,7 +5,7 @@ $(document).ready(function() {
 var array = [];
 var num = ($("#input").val());
 
-for ( var i = 1; i <= 15; i++) {
+for ( var i = 1; i <= num; i++) {
   array.push(i);
 
   if (i % 3 === 0 && i % 15 === 0) {
