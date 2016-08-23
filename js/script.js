@@ -2,29 +2,29 @@ $(document).ready(function() {
   $("#inputForm").submit(function(event) {
     event.preventDefault();
     $("li").remove();
-    var array = [];
+    var count = [];
     var limit = ($("#input").val());
 
     for ( var i = 1; i <= limit; i++) {
-      array.push(i);
+      count.push(i);
 
       if (i % 15 === 0) {
-        array.pop(i);
-        array.push("pingpong");
+        count.pop(i);
+        count.push("pingpong");
       }
       else if (i % 3 === 0 ) {
-        array.pop(i);
-        array.push("ping");
+        count.pop(i);
+        count.push("ping");
       }
       else if (i % 5 === 0 ) {
-        array.pop(i);
-        array.push("pong");
+        count.pop(i);
+        count.push("pong");
       }
     }
 
 
-    for (var i = 0; i < array.length; i++) {
-      $(".output").append('<li>' + array[i] + '</li>');
+    for (var i = 0; i < count.length; i++) {
+      $(".output").append('<li>' + count[i] + '</li>');
     }
 
     $("li").show();
