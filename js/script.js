@@ -3,9 +3,9 @@ $(document).ready(function() {
     event.preventDefault();
     $("li").remove();
     var array = [];
-    var num = ($("#input").val());
+    var limit = ($("#input").val());
 
-    for ( var i = 1; i <= num; i++) {
+    for ( var i = 1; i <= limit; i++) {
       array.push(i);
 
       if (i % 15 === 0) {
@@ -22,7 +22,7 @@ $(document).ready(function() {
       }
     }
 
-  
+
     for (var i = 0; i < array.length; i++) {
       $(".output").append('<li>' + array[i] + '</li>');
     }
