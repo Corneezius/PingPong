@@ -6,19 +6,18 @@ $(document).ready(function() {
     var limit = ($("#input").val());
 
     for ( var i = 1; i <= limit; i++) {
-      count.push(i);
 
       if (i % 15 === 0) {
-        count.pop(i);
         count.push("pingpong");
       }
       else if (i % 3 === 0 ) {
-        count.pop(i);
         count.push("ping");
       }
       else if (i % 5 === 0 ) {
-        count.pop(i);
         count.push("pong");
+      }
+      else {
+        count.push(i);
       }
     }
 
