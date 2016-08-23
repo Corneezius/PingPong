@@ -8,7 +8,7 @@ var num = ($("#input").val());
 for ( var i = 1; i <= num; i++) {
   array.push(i);
 
-  if (i % 3 === 0 && i % 15 === 0) {
+  if (i % 15 === 0) {
   array.pop(i);
   array.push("pingpong");
   }
